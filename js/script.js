@@ -67,7 +67,7 @@ teamList.innerHTML = teamCards;
 function generalCard(oggetto) {
 
   // seleziono i valori mettendoli in una costante
-  const {nome, role, email, img} = oggetto;
+  const {name, role, email, img} = oggetto;
 
 
   // creazione variabile che contiene la card con i valori contenuti negli oggetti
@@ -75,12 +75,12 @@ function generalCard(oggetto) {
   let singolaCard = `
   <div class="card mb-3" style="max-width: 540px; background-color: black; color: white;">
     <div class="row g-0">
-      <div class="col-md-4">
-        <img src="${img}" class="img-fluid rounded-start" alt="">
+      <div class="col-md-3">
+        <img src="${img}" class="img-fluid rounded-start" alt="${name}">
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title">${nome}</h5>
+          <h5 class="card-title">${name}</h5>
           <p class="card-text">${role}</p>
           <p class="card-text">
             <small class="text-body-primary">${email}nome</small>
