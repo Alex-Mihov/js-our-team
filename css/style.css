@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titolo-pagina {
+    text-align: center;
+}
+
+.titolo-pagina h1 {
+    color: red;
+}
+
+/* regole container */
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* regole per la card */
+.card-member {
+    display: flex;
+    width: 25%;
+    height: 100px;
+    background-color: black;
+    color: white;
+    margin: 20px;
+    
+}
+
+.img-member {
+    height: 100%;
+    
+}
+
+.member-info {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.member-info a {
+    text-decoration: none;
+}
+
+.member-info p {
+    margin-bottom: 0;
+}

@@ -73,21 +73,18 @@ function generalCard(oggetto) {
   // creazione variabile che contiene la card con i valori contenuti negli oggetti
 
   let singolaCard = `
-  <div class="card mb-3" style="max-width: 540px; background-color: black; color: white;">
-    <div class="row g-0">
-      <div class="col-md-3">
-        <img src="${img}" class="img-fluid rounded-start" alt="${name}">
-      </div>
-      <div class="col-md-8">
-        <div class="card-body">
-          <h5 class="card-title">${name}</h5>
-          <p class="card-text">${role}</p>
-          <p class="card-text">
-            <small class="text-body-primary">${email}nome</small>
-          </p>
+  <div class="card-member">
+
+            <div class="img-member"></div>
+            <img src="${img}" class="img-fluid rounded-start" alt="${name}">
+  
+            <div class="member-info">
+                <h5>${name}</h5>
+                <p class="card-text">${role}</p>
+                <a href="#">${email}</a>
+            </div>
+            
         </div>
-      </div>
-  </div>
   `
 
   return singolaCard
