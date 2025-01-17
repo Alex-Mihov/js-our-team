@@ -50,16 +50,25 @@ const teamList = document.querySelector(".team-container");
 let teamCards = "";
 
 // uso un ciclo for per selezionare tutti gli oggetti dell'array
-for (let i = 0; i < teamMembers.length; ) {
+for (let i = 0; i < teamMembers.length; i++) {
+
+  teamCards += generalCard(teamMembers[i]);
+
+  // console.log(teamCards)
 
 }
 
+teamList.innerHTML = teamCards;
+
+
+
 
 // creazione funzione genrale che crea la card selezionando i valori degli oggetti
-function generaCard(oggetto) {
+function generalCard(oggetto) {
 
   // seleziono i valori mettendoli in una costante
-  const {nome, role, email, img} = teamMembers;
+  const {nome, role, email, img} = oggetto;
+
 
   // creazione variabile che contiene la card con i valori contenuti negli oggetti
 
@@ -84,7 +93,7 @@ function generaCard(oggetto) {
   return singolaCard
 }
 
-// console.log(generaCard());
+// console.log(generalCard());
 
 
 
