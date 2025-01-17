@@ -51,3 +51,23 @@
 .member-info p {
     margin-bottom: 0;
 }
+
+
+/**************************** media query *************************************/
+/* medium device */
+@media screen and (max-width:1240px) {
+
+    .card-member {
+        width: 40%;
+    }
+
+}
+
+/* small device */
+@media screen and (max-width:790px) {
+
+    .card-member {
+        width: 80%;
+    }
+
+}
